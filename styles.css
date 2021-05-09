@@ -24,11 +24,10 @@ body{
 
 @font-face {
     font-family: arcade;
-    src: url(fonts/ARCADECLASSIC.TTF);
+    src: url(../fonts/ARCADECLASSIC.TTF);
 }
 
 @font-face {
     font-family: long;
-    src: url(fonts/long_pixel.ttf);
+    src: url(../fonts/long_pixel.ttf);
 }
-
