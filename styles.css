@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+body{
+    background-color: black;
+}
+
 .header{
     position: fixed;
     width: 100%;
@@ -11,8 +15,20 @@
 }
 
 #texto{
+    width: 900px;
     font-size: 100px;
+    font-family: long;
+    color: white;
+    user-select: none; 
 }
 
+@font-face {
+    font-family: arcade;
+    src: url(fonts/ARCADECLASSIC.TTF);
+}
 
+@font-face {
+    font-family: long;
+    src: url(fonts/long_pixel.ttf);
+}
 
