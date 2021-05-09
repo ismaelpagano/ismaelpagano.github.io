@@ -4,14 +4,14 @@
 }
 
 body{
-    background-image: url(img/fondo2.png);
+    background-image: url(../img/fondo2.png);
     background-repeat: repeat;
     height: 5000px;
     z-index: -1000;
 }
 
 #filtro{
-    background-image: url(img/filtro2.png);
+    background-image: url(../img/filtro2.png);
     background-repeat: repeat;
     position: fixed;
     width: 100%;
@@ -41,12 +41,12 @@ body{
 
 @font-face {
     font-family: arcade;
-    src: url(fonts/ARCADECLASSIC.TTF);
+    src: url(../fonts/ARCADECLASSIC.TTF);
 }
 
 @font-face {
     font-family: long;
-    src: url(fonts/long_pixel.ttf);
+    src: url(../fonts/long_pixel.ttf);
 }
 
 #flecha {
