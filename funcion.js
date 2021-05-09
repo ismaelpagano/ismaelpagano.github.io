@@ -13,12 +13,8 @@ function escribir(texto1){
                 this.setTimeout(function(){
                     loop(tex1, tex2, i);
             }, 100);
-        console.log("hola");
     }
-    
     loop(texto, texto2, 0)
-
-    console.log(texto2)
 }
 
 
