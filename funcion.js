@@ -1,5 +1,7 @@
 var texto = "Querés aprender programación de videojuegos?";
 
+var y = 0;
+
 function escribir(texto1){
     var texto2 = '';
 
@@ -53,4 +55,40 @@ function dibujar(dib, x, y){
 }
 
 escribir(texto);
+
+
+function funcion(event){
+    var dy = event.deltaY;
+    y = y - dy;
+    var obj = document.getElementById("contenedor");
+    var h = getComputedStyle(obj);
+    var obj2 = document.getElementById("pagina");
+    var h2 = getComputedStyle(obj2)
+    h2 = parseInt(h2.height,10);
+    h = parseInt(h.height, 10);
+    h = -h2 + h;
+    if(y > 0){
+        y = 0;
+    } else if ( y < h){
+        y = h;
+    }
+    document.getElementById("pagina").style.top = y + "px"; 
+}
+
+function scroll1(event){
+    var arr = new Array(0, 1, 2, 3);
+    var dy = event.deltaY;
+    if(dy > 0 && y != 3){
+        y++;
+    } else  if (dy < 0 && y != 0){
+        y--;
+    }
+    var sec = "sec" + y; 
+    var h = document.getElementById(sec);
+    h = h.offsetTop;
+    document.getElementById("pagina").style.top = -h + "px"; 
+    console.log(h);
+    console.log(y);
+}
+
 
